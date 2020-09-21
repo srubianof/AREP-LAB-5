@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="styles.css" >
+
+    <script type="text/javascript" src="js/api.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<form>
+    <div class="container">
+        <div class="card" style="float:left">
+            <div class="card head">
+                <h2>
+                    Docker Messages Example
+                </h2>
+                <img src="https://cdn.discordapp.com/attachments/748398289514397717/757308689840341002/pngegg.png" alt="centered image">
+            </div>
+            <div class="card body">
+                <label  class="justify-content-center text-center alert alert-primary">Nombre
+                    Cine</label>
+                <div class="form-group">
+
+                    <input class="form-control justify-content-center text-center" id="message" placeholder="Message">
+                    <input type="button" id="messagesButton" value="Get Messages" class="btn btn-primary my-2 w-100">
+                </div>
+
+                <label  class="justify-content-center text-center alert alert-primary">Get a list of messages below</label>
+                <table class="table table-bordered table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">Message</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
