@@ -1,16 +1,14 @@
 version: '2'
 services:
   loadbalancer:
-    build:
-      image: srubianof/boadbalancer
+    image: srubianof/boadbalancer
     depends_on:
       - web
     container_name: 'LoadBalancer'
     ports:
         - "9001:6000"
   web:
-    build:
-      image: srubianof/primersparkwebrepo
+    image: srubianof/primersparkwebrepo
     depends_on:
       - db
     ports:
