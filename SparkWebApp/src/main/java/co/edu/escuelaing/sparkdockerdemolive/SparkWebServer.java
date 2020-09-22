@@ -11,10 +11,18 @@ import java.util.*;
 
 import static spark.Spark.*;
 
+/**
+ * The type Spark web server.
+ */
 public class SparkWebServer {
 
     private static DBConnection dbConnection = new DBConnection();
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String... args) {
         port(getPort());
 

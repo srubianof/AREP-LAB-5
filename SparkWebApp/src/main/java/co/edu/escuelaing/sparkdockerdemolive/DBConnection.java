@@ -13,11 +13,17 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * The type Db connection.
+ */
 public class DBConnection {
     private MongoClient mongoClient;
     private MongoClientURI uri;
     private Map<String, String> messagesMap;
 
+    /**
+     * Instantiates a new Db connection.
+     */
     public DBConnection() {
         uri = new MongoClientURI(
                 "mongodb://arep:arep@MongoDB:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=AREP&authMechanism=SCRAM-SHA-1&3t.uriVersion=3");
@@ -25,6 +31,11 @@ public class DBConnection {
         mongoClient = new MongoClient(uri);
     }
 
+    /**
+     * Create message.
+     *
+     * @param message the message
+     */
     public void createMessage(String message) {
         MongoDatabase db = mongoClient.getDatabase("AREP");
         MongoCollection<Document> collection = db.getCollection("Messages");
@@ -38,6 +49,11 @@ public class DBConnection {
         collection.insertOne(document);
     }
 
+    /**
+     * Gets messages.
+     *
+     * @return the messages
+     */
     public ArrayList<Message> getMessages() {
 
         ArrayList<Message> messageArrayList = new ArrayList<>();

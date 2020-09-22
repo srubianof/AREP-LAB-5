@@ -4,12 +4,13 @@ var api = (function () {
     function addMessage() {
         var mensaje = document.getElementById("message").value;
         console.log(mensaje)
-        axios.post(endP, {"Message":mensaje,"Date":""})
+        axios.post(endP, {"Message": mensaje, "Date": ""})
             .then(res => {
                     getMessages()
                 }
             )
     }
+
     function getMessages() {
         $("#messagesTable > tbody").empty();
         axios.get(endP).then(res => {
