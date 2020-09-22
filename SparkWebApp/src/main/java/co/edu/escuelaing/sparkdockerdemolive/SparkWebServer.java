@@ -18,11 +18,15 @@ public class SparkWebServer {
     public static void main(String... args) {
         port(getPort());
 
-        get("/messages", (req, res) -> {
-            res.status(200);
-            res.type("application/json");
-            return new Gson().toJson(dbConnection.getMessages());
-        });
+        try {
+            get("/messages", (req, res) -> {
+                res.status(200);
+                res.type("application/json");
+                return new Gson().toJson(dbConnection.getMessages());
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         try {
             post("/messages", (req, res) -> {
                 res.status(200);
