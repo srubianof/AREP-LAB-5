@@ -4,7 +4,7 @@ The project is composed by different Docker containters each one of them belongi
 ![](https://cdn.discordapp.com/attachments/748398289514397717/757774492146729020/Screen_Shot_2020-09-21_at_8.25.14_PM.png)
 
 * To check a demo of the implementation, follow the next [link](https://youtu.be/euR5w0nvFPI)
-![](https://media.discordapp.net/attachments/748398289514397717/758072417678786640/gif.gif)
+![](img/gif.gif)
 
 ## Badges
 Continous Integration for Web Server [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/srubianof/arep-webserver)
