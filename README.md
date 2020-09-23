@@ -6,8 +6,11 @@ The project is composed by different Docker containters each one of them belongi
 * To check a demo of the implementation, follow the next [link](https://youtu.be/euR5w0nvFPI)
 ![](img/gif.gif)
 
+The complete report of the activity can be found [here](https://www.overleaf.com/read/fhfwhqcftkhm)
+
 ## Badges
 Continous Integration for Web Server [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/srubianof/arep-webserver)
+
 Continous Integration for Load Balancer [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/srubianof/arep-loadbalancer)
 ## Getting Started
 The following steps are required in order to get a copy of the project, and be able to run it and perform tests.
@@ -58,7 +61,7 @@ sh pruebita.sh
 * [Maven](https://maven.apache.org) - Dependency Management
 ## Javadoc
 
-The complete documentation of the project can be found [here](https://srubianof.github.io/arep-lab-3-docs/).
+The complete documentation of the project is divided by components, the documentation for the Load Balancer can be found [here](https://github.com/srubianof/AREP-LAB-5/tree/master/Docs/LoadBalancer) and the documentation for the Web Server [here](https://github.com/srubianof/AREP-LAB-5/tree/master/Docs/WebServer)
 
 The complete report of the activity can be found [here](https://github.com/srubianof/AREP-LAB-3/blob/master/AREP_LAB_3.pdf)
 
